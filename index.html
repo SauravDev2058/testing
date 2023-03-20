@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Transaction</title>
+
+    <style>
+        *{
+    margin: 0.2rem;
+    text-decoration: none;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'Poppins';
+}
+
+p{
+    font-size: 12px;
+}
+
+.top-header{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.card{
+    background-color: #fff;
+    margin: 0.5rem;
+    border-radius: 20px;
+    box-shadow: #191825;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.1rem;
+    color: #191825;
+}
+
+.header-text{
+    color: grey;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 350px;
+}
+.table-data{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td {
+    
+    padding: 0.5rem;
+    vertical-align: top;
+  }
+  td:first-child {
+    width: 50%;
+  }
+  td:last-child {
+    width: 50%;
+    padding-left:  0rem;
+}
+
+.dashes-container{
+    display: flex;
+    justify-content: center;
+}
+.dashes{
+    color: rgb(205, 205, 205);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button-red{
+    background-color:#f01c2c;
+    color: #ffffff;
+    border: none;
+    padding: 20px 140px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .header-text {
+      max-width: 350px;
+    }
+    
+    table {
+      font-size: 14px;
+    }
+    
+    .button-red {
+      font-size: 12px;
+    }
+  }
+    </style>
+</head>
+<body>
+
+
+    <div class="top-header">
+        <h3><span class="material-symbols-outlined">picture_as_pdf</span>  Download Receipt </h3>
+    </div>
+
+
+    <section class="card">
+      <div class="right-tick" style="display: flex; justify-content: center;">
+        <img src="right-tick.jpg" style="height: 190px; width: 380px;"/>
+      </div>
+        <header>
+            <h1> Transaction Success </h1>
+        </header>
+        <div class="header-text">
+            <p style="margin: 0.8rem 0;"> Dear SAURAV, your payment of NPR 100.00 with Charge 0.00 from A/C 018###45083001 for 89049359 was successful.</p>
+        </div>
+        <div class="dashes-container">
+            <p class="dashes">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+        </div>
+        <div class="table-data">
+            <table style="margin: 0 1rem;">
+                <tr>
+                  <td style="color: grey; font-size: 15px;">Reference Code</td>
+                  <td style="color:#191825;">35018023</td>
+                </tr>
+                <tr>
+                  <td style="color: grey; font-size: 15px;">Date/Time</td>
+                  <td style="color:#191825;">17 Mar<br/>2023,02:25PM</td>
+                </tr>
+                <tr>
+                  <td style="color: grey; font-size: 15px;">Channel</td>
+                  <td><button style="background-color: #f01c2c; color: #fff; border: none; padding: none; border-radius: 3px;">Online</button></td>
+                </tr>
+                <tr>
+                  <td style="color: grey; font-size: 15px;">Payment Attribute</td>
+                  <td style="color:#191825;">22224100045<br/>80733/Saurav<br/> Dev/N/A/N/<br/>A/89049359<br/>JANAKI MANIYAM BUDATHOKI</td>
+                </tr>
+                <tr>
+                     <td style="color: grey; font-size: 15px;">Service Name</td>
+                  <td style="color:#191825;">Mobile<br/> Convergent</td>
+                </tr>
+                <tr>
+                  <td style="color: grey; font-size: 15px;">Amount(NPR)</td>
+                  <td style="color:#191825;">400.00</td>
+                </tr>
+                <tr>
+                  <td style="color: grey; font-size: 15px;">Initiator</td>
+                  <td style="color:#191825;">9800924663</td>
+                </tr>
+                <tr>
+                  <td style="color: grey; font-size: 15px;">Qr Merchant Name</td>
+                  <td style="color:#191825;">JANAKI<br/>MANIYAM<br/>BUDATHOKI</td>
+                </tr>
+              </table>
+        </div>
+        <div class="dashes-container">
+        <p class="dashes">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+        </div>
+
+        <div class="button" style="display: flex; justify-content: center;">
+            <button class="button-red" role="button" style="background-color:#f01c2c;
+            color: #ffffff;
+            border: none;
+            padding: 20px 140px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 3px;">Done</button>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
